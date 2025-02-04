@@ -26,7 +26,7 @@ bode.procesarProducto(producto5);
 
 let salida = document.getElementById("salida")
 
-salida.innerHTML=`
+salida.innerHTML = `
 La ganancia será de: ${bode.gananciaTotal()}Bs
 `
 
