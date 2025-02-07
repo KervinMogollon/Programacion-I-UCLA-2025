@@ -7,17 +7,14 @@ export default class CL_Empresa {
     }
 
     procesarPersonal(pers) {
-        if (pers.cargo === "O")
+        if (pers.cargo === "O") {
             this.acuSueldoObreros += pers.sueldo
+        } else { this.acuSuedloAdmins += pers.sueldo }
 
-        if (pers.cargo === "O")
-            this.cntObreros++
-
-        if (pers.cargo === "A")
-            this.acuSuedloAdmins += pers.sueldo
-
-        if (pers.cargo === "A")
-            this.cntAdmins++
+        if (pers.cargo === "O") {
+            this.cntObreros++;
+        }
+        else { this.cntAdmins++ }
     }
 
     pagaObreros() {
