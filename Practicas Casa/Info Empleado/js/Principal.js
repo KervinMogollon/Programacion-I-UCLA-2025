@@ -19,8 +19,6 @@ Promedio pagado a 2 administrativos: $175
 import CL_Personal from "./Personal.js";
 import CL_Empresa from "./Empresa.js";
 
-let pers = new CL_Personal();
-
 let pers1 = new CL_Personal("Juan", "O", 100),
     pers2 = new CL_Personal("Ana", "O", 120),
     pers3 = new CL_Personal("Lin", "A", 200),

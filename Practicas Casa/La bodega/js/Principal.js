@@ -29,5 +29,3 @@ let salida = document.getElementById("salida")
 salida.innerHTML = `
 La ganancia será de: ${bode.gananciaTotal()}Bs
 `
-
-
