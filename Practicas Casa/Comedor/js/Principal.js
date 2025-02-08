@@ -4,9 +4,15 @@ Se tienen cierta cantidad suficiente de empanadas (Bs.20 c/u), pastelitos (Bs.10
 (Bs.5 c/u). Los comensales piden sólo un tipo de comida, su cantidad y si quieren o no jugo. Se
 desea conocer cuánto pagará el comensal. También se quiere saber cuánto queda de cada
 comida al final y cuánto dinero recibió el cafetín.
-Si el cafetín tiene 20 empanadas, 15 pastelitos y 10 jugos, y Elvis compra 3 pastelitos, Joao 2
-empanadas con jugo, Melisa 5 empanadas, María 2 pastelitos con jugo y Rosa 10 empanadas, la
-salida sería como sigue:
+Si el cafetín tiene 20 empanadas, 15 pastelitos y 10 jugos, y:
+Elvis compra 3 pastelitos
+Joao 2
+empanadas con jugo
+Melisa 5 empanadas
+María 2 pastelitos con jugo
+Rosa 10 empanadas
+
+la salida sería como sigue:
 Elvis paga Bs.30
 Joao paga Bs.45
 Melisa paga Bs.100
