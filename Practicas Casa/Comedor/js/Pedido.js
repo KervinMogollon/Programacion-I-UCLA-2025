@@ -1,8 +1,8 @@
 export default class CL_Pedido {
-    constructor(nombre, orden, CantOrden, jugo) {
+    constructor(nombre, orden, cantOrden, jugo) {
         this.nombre = nombre;
         this.orden = orden;
-        this.CantOrden = CantOrden;
+        this.cantOrden = cantOrden;
         this.jugo = jugo;
     }
 
@@ -22,11 +22,11 @@ export default class CL_Pedido {
         return this._orden
     }
 
-    set CantOrden(CantOrden) {
-        this._cantOrden = CantOrden;
+    set cantOrden(cantOrden) {
+        this._cantOrden = cantOrden;
     }
 
-    get CantOrden() {
+    get cantOrden() {
         return this._cantOrden
     }
 
@@ -40,18 +40,25 @@ export default class CL_Pedido {
 
     comida() {
         switch (this.orden) {
-            case "empanadas":
+            case "empanada":
                 return 20;
                 break;
-            case "pastelitos":
+            case "pastelito":
                 return 10;
                 break;
         }
     }
 
-    cantComida(){
-        return this.comida() * this.CantOrden
+    costoComida() {
+        return this.comida() * this.cantOrden
     }
 
-
+    qJugo() {
+        switch (this.jugo) {
+            case "si":
+                return 1;
+                break;
+            default: 0
+        }
+    }
 }
