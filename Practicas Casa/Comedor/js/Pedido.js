@@ -49,16 +49,16 @@ export default class CL_Pedido {
         }
     }
 
-    costoComida() {
-        return this.comida() * this.cantOrden
-    }
-
     qJugo() {
         switch (this.jugo) {
             case "si":
-                return 1;
+                return 5;
                 break;
-            default: 0
+            default: return 0
         }
+    }
+
+    costoComida() {
+        return (this.comida() * this.cantOrden) + this.qJugo()
     }
 }
