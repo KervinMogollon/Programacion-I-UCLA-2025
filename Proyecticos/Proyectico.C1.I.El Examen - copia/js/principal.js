@@ -25,15 +25,15 @@ nombre: Mery'  cedula: 3333  sexo: 'F'  nota: 8
 import CL_Estudiante from "./Estudiante.js";
 import CL_Examen from "./Examen.js";
 
-let estud1 = new CL_Estudiante("Luis", 11, "M", 12),
-    estud2 = new CL_Estudiante("Carla", 22, "F", 16.5),
-    estud3 = new CL_Estudiante("Carlos", 33, "M", 11.5),
-    estud4 = new CL_Estudiante("Fabio", 44, "M", 2),
-    estud5 = new CL_Estudiante("Alexa", 55, "F", 18),
-    estud6 = new CL_Estudiante("Milly", 66, "F", 7),
-    estud7 = new CL_Estudiante("Mery", 77, "F", 10);
+let estud1 = new CL_Estudiante("Luis", 11, "M", 12, 1),
+    estud2 = new CL_Estudiante("Carla", 22, "F", 16.5, 2),
+    estud3 = new CL_Estudiante("Carlos", 33, "M", 11.5, 3),
+    estud4 = new CL_Estudiante("Fabio", 44, "M", 2, 3),
+    estud5 = new CL_Estudiante("Alexa", 55, "F", 18, 2),
+    estud6 = new CL_Estudiante("Milly", 66, "F", 7, 2),
+    estud7 = new CL_Estudiante("Mery", 77, "F", 10, 1);
 
-let exa = new CL_Examen(20, 9.6);
+let exa = new CL_Examen(20);
 
 exa.procesarEstudiante(estud1);
 exa.procesarEstudiante(estud2);

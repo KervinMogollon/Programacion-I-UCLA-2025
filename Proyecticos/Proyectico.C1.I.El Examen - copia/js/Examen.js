@@ -1,7 +1,6 @@
 export default class CL_Examen {
-    constructor(maxValor, minAprobatorio) {
+    constructor(maxValor) {
         this.maxValor = maxValor;
-        this.minAprobatorio = minAprobatorio;
         this.estud = 0;
         this.cntAprobados = 0;
         this.notaMayor = 0;
@@ -13,7 +12,7 @@ export default class CL_Examen {
     procesarEstudiante(estud) {
         this.estud++
 
-        if (estud.nota >= this.minAprobatorio)
+        if (estud.nota >= estud.minsAprobatorios())
             this.cntAprobados++
 
         if (estud.nota > this.notaMayor) {
@@ -24,7 +23,7 @@ export default class CL_Examen {
         if(estud.sexo === "F")
             this.cntChicas++
 
-        if (estud.nota >= this.minAprobatorio && estud.sexo === "F")
+        if (estud.nota >= estud.minsAprobatorios() && estud.sexo === "F")
             this.chicasAprobadas++
     }
 

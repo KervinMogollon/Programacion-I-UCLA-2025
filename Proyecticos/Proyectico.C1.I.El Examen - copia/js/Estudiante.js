@@ -4,7 +4,7 @@ export default class CL_Estudiante {
         this.cedula = cedula;
         this.sexo = sexo;
         this.nota = nota;
-        this.tipoPrueb = tipoPrueb
+        this.tipoPrueb = tipoPrueb;
     }
 
     set nombre(nombre) {
@@ -32,7 +32,7 @@ export default class CL_Estudiante {
     }
 
     set nota(nota) {
-        this._nota = nota;
+        this._nota = +nota;
     }
 
     get nota() {
@@ -40,16 +40,25 @@ export default class CL_Estudiante {
     }
 
     set tipoPrueb(tipoPrueb) {
-        this._tipoPrueb = tipoPrueb;
+        this._tipoPrueb = +tipoPrueb;
     }
 
     get tipoPrueb() {
         return this._tipoPrueb
     }
 
-    minAprobatorios(){
-        switch(this.tipo){
-            
+    minsAprobatorios() {
+        switch (this.tipoPrueb) {
+            case 1:
+                return 14;
+                break;
+            case 2:
+                return 11;
+                break;
+            case 3:
+                return 16
+                break;
+
         }
 
     }
