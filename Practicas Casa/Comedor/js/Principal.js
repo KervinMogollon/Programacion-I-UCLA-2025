@@ -32,7 +32,7 @@ let ped1 = new CL_Pedido("Elvis", "pastelito", 3),
     ped4 = new CL_Pedido("María", "pastelito", 2, "si"),
     ped5 = new CL_Pedido("Rosa", "empanada", 10);
 
-let com = new CL_Comedor();
+let com = new CL_Comedor(20, 15, 10);
 
 com.procesarPedido(ped1);
 com.procesarPedido(ped2);
