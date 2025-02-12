@@ -7,6 +7,22 @@ export default class CL_Oficina {
         this.clienteMenor = "";
     }
 
+    set montoCaja(montoCaja) {
+        this._montoCaja = montoCaja;
+    }
+
+    get montoCaja() {
+        return this._montoCaja
+    }
+
+    set porcComision(porcComision) {
+        this._porcComision = porcComision;
+    }
+
+    get porcComision() {
+        return this._porcComision
+    }
+
     procesarPrestamos(prest) {
         this.montoCaja -= prest.prestamos
 
@@ -19,11 +35,11 @@ export default class CL_Oficina {
         }
     }
 
-    prestamos2Meses(){
+    prestamos2Meses() {
         return this.cntClientes2M
     }
 
-    menorCliente(){
+    menorCliente() {
         return this.clienteMenor
     }
 }
