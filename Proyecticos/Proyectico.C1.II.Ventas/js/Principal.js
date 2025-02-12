@@ -53,4 +53,6 @@ salida.innerHTML = `reporte
 <br>Monto final en caja: ${(tie.montFinalCaja().toFixed(2))}$
 <br>Cliente que pagó el monto mayor: ${tie.mayorPago()}
 <br>Cantidad de clientes que sólo llevaron 1 artículo: ${tie.cantCliente1Art()}
+
+<br>pago luis ${tie.procesarVentas(Vent1)}
 `

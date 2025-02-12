@@ -13,7 +13,7 @@ export default class CL_Examen {
     procesarEstudiante(estud) {
         this.estud++
 
-        if (estud.nota > + this.minAprobatorio)
+        if (estud.nota >= this.minAprobatorio)
             this.cntAprobados++
 
         if (estud.nota > this.notaMayor) {
