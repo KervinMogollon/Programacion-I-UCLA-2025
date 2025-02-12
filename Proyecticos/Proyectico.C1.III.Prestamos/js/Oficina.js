@@ -16,7 +16,7 @@ export default class CL_Oficina {
     }
 
     set porcComision(porcComision) {
-        this._porcComision = porcComision;
+        this._porcComision = +porcComision;
     }
 
     get porcComision() {
