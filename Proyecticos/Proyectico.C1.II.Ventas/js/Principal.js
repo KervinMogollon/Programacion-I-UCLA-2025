@@ -43,6 +43,7 @@ let Vent1 = new CL_Ventas("Luis", 11, 100, 3),
 
 let tie = new CL_Tienda(200, 25);
 
+
 tie.procesarVentas(Vent1);
 tie.procesarVentas(Vent2);
 tie.procesarVentas(Vent3);

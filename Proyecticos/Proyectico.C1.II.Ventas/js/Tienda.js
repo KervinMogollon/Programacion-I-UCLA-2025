@@ -21,7 +21,7 @@ export default class CL_Tienda{
     }
 
     montFinalCaja(){
-        return this.acuVentas
+        return this.montCaja + this.acuVentas
     }
 
     mayorPago(){
