@@ -4,6 +4,7 @@ export default class Cl_mEmpleado {
     this.tipo = tipo;
     this.gana = gana;
   }
+  
   set tipo(tipo) {
     this._tipo = +tipo;
     if (tipo !== 1 && tipo !== 2) this._tipo = 1;

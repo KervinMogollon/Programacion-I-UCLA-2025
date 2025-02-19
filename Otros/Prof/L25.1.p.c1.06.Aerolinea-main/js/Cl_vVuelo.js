@@ -19,6 +19,7 @@ export default class Cl_vVuelo {
   get pasajeros() {
     return +this.inPasajeros.value;
   }
+  
   mostrar() {
     this.vista.hidden = false;
   }

@@ -1,35 +1,24 @@
 import Cl_vEmpleado from "./Cl_vEmpleado.js";
 import Cl_mEmpleado from "./Cl_mEmpleado.js";
 export default class Cl_vEmpresa {
+
   constructor() {
     this.controlador = null;
 
-    this.lblMontoTotalObreros = document.getElementById(
-      "mainForm_lblMontoTotalObreros"
-    );
+    this.lblMontoTotalObreros = document.getElementById("mainForm_lblMontoTotalObreros");
 
-    this.lblCantidadObreros = document.getElementById(
-      "mainForm_lblCantidadObreros"
-    );
+    this.lblCantidadObreros = document.getElementById("mainForm_lblCantidadObreros");
 
-    this.lblPromedioObreros = document.getElementById(
-      "mainForm_lblPromedioObreros"
-    );
+    this.lblPromedioObreros = document.getElementById("mainForm_lblPromedioObreros");
 
-    this.lblMontoTotalAdministrativos = document.getElementById(
-      "mainForm_lblMontoTotalAdministrativos"
-    );
+    this.lblMontoTotalAdministrativos = document.getElementById("mainForm_lblMontoTotalAdministrativos");
 
-    this.lblCantidadAdministrativos = document.getElementById(
-      "mainForm_lblCantidadAdministrativos"
-    );
+    this.lblCantidadAdministrativos = document.getElementById("mainForm_lblCantidadAdministrativos");
 
-    this.lblPromedioAdministrativos = document.getElementById(
-      "mainForm_lblPromedioAdministrativos"
-    );
+    this.lblPromedioAdministrativos = document.getElementById("mainForm_lblPromedioAdministrativos");
 
     this.vEmpleado = new Cl_vEmpleado();
-    
+
     this.vEmpleado.btProcesar.onclick = () =>
       this.controlador.procesarEmpleado();
   }
