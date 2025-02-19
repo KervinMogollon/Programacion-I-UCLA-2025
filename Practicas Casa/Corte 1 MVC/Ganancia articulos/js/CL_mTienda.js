@@ -13,6 +13,4 @@ export default class CL_mTienda{
             this.codMayor = art.cod
         }
     }
-
-
 }
