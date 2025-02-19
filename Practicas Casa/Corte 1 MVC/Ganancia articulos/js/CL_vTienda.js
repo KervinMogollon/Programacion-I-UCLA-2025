@@ -1,7 +1,7 @@
 import CL_mArticulo from "./CL_mArticulo.js";
 import CL_vArticulo from "./CL_vArticulo.js";
 
-export default class CL_vtienda {
+export default class CL_vTienda {
     constructor() {
         this.controlador = null;
 

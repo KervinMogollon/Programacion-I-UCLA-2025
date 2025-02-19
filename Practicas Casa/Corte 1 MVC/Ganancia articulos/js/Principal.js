@@ -20,13 +20,13 @@ Código del artículo con mayor precio de venta: 444
  */
 
 import CL_mTienda from "./CL_mTienda.js";
-import CL_vtienda from "./CL_vTienda.js";
+import CL_vTienda from "./CL_vTienda.js";
 import CL_Controlador from "./CL_Controlador.js";
 
 export default class CL_Principal {
     constructor() {
         let modelo = new CL_mTienda(),
-            vista = new CL_vtienda(),
+            vista = new CL_vTienda(),
             controlador = new CL_Controlador(modelo, vista);
         vista.controlador = controlador
     }
