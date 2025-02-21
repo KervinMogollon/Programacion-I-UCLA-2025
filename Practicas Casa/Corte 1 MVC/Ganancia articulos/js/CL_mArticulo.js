@@ -29,7 +29,7 @@ export default class CL_mArticulo{
         return this._costVent
     }
 
-    ganancia(){
+    gananciaArticulo(){
         this.costVent - this.precio
     }
 }

@@ -6,7 +6,7 @@ export default class CL_Controlador {
 
     procesarArticulo() {
         this.modelo.procesarArticulo(this.vista.procesarArticulo());
-        this.vista.procesarArticulo(
+        this.vista.reportarArticulo(
             this.modelo.acuGanancia,
             this.modelo.codMayor,
         );

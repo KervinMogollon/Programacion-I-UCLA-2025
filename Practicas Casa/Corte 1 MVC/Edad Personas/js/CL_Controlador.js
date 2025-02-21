@@ -6,7 +6,7 @@ export default class CL_Controlador{
 
     procesarEdad(){
         this.modelo.procesarEdad(this.vista.procesarEdad());
-        this.vista.procesarEdad(
+        this.vista.reporteEdad(
             this.modelo.calcularPromedio(),
         );
     }

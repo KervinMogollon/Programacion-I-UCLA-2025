@@ -6,7 +6,7 @@ export default class CL_mTienda{
     }
 
     procesarArticulo(art){
-        this.acuGanancia += art.ganancia()
+        this.acuGanancia += art.gananciaArticulo();
 
         if (art.costVent > this.pVentaMayor){
             this.pVentaMayor = art.costVent

@@ -9,8 +9,7 @@ export default class CL_vPersona{
 
         this.vEdad = new CL_vEdad();
 
-        this.vEdad.btProcesar.onclick = () =>
-            this.controlador.procesarEdad();
+        this.vEdad.btProcesar.onclick = () => this.controlador.procesarEdad();
     }
 
     procesarEdad(){
@@ -20,9 +19,7 @@ export default class CL_vPersona{
         return this.mEdad;
     }
 
-    reporteEdad(
-        promedioEdad,
-    ){
+    reporteEdad(promedioEdad){
         this.lblPromedioEdad.innerHTML = promedioEdad;
     }
 }
