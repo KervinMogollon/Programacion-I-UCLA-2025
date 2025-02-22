@@ -1,43 +1,43 @@
-export default class CL_Comedor {
-    constructor({iniEmpanadas, iniPastelistos, iniJugo}) {
+export default class CL_mComedor {
+    constructor({ iniEmpanadas, iniPastelistos, iniJugo }) {
         this.acuEmpanadas = iniEmpanadas;
         this.acuPastelitos = iniPastelistos;
         this.acuJugos = iniJugo;
     }
 
-    set acuEmpanadas(iniEmpanadas) {
-        this._acuEmpanadas = +iniEmpanadas;
+    set iniEmpanadas(iniEmpanadas) {
+        this._iniEmpanadas = +iniEmpanadas;
     }
 
-    get acuEmpanadas() {
-        return this._acuEmpanadas
+    get iniEmpanadas() {
+        return this._iniEmpanadas
     }
 
-    set acuPastelitos(iniPastelistos) {
-        this._acuPastelitos = +iniPastelistos;
+    set iniPastelistos(iniPastelistos) {
+        this._iniPastelistos = +iniPastelistos;
     }
 
-    get acuPastelitos() {
-        return this._acuPastelitos
+    get iniPastelistos() {
+        return this._iniPastelistos
     }
 
-    set acuJugos(iniJugo) {
-        this._acuJugos = +iniJugo;
+    set iniJugo(iniJugo) {
+        this._iniJugo = +iniJugo;
     }
 
-    get acuJugos() {
-        return this._acuJugos
+    get iniJugo() {
+        return this._iniJugo
     }
 
     procesarPedido(ped) {
-        if (ped.orden === "empanada") {
+        if (ped.orden === 1)
             this.acuEmpanadas -= ped.cantOrden
-        }
-        else { this.acuPastelitos -= ped.cantOrden }
 
-        if (ped.jugo === "si") {
+        if (ped.orden === 2)
+            this.acuPastelitos -= ped.cantOrden
+
+        if (ped.jugo === "si") 
             this.acuJugos -= 1
-        }
     }
 
     restoEmpanadas() {

@@ -1,4 +1,4 @@
-export default class CL_Pedido {
+export default class CL_mPedido {
     constructor({nombre, orden, cantOrden, jugo}) {
         this.nombre = nombre;
         this.orden = orden;
@@ -40,10 +40,10 @@ export default class CL_Pedido {
 
     comida() {
         switch (this.orden) {
-            case "empanada":
+            case 1:
                 return 20;
                 break;
-            case "pastelito":
+            case 2:
                 return 10;
                 break;
         }
