@@ -6,7 +6,7 @@ export default class CL_controlador{
 
     procesarPedido(){
         this.modelo.procesarPedido(this.vista.procesarPedido())
-        this.vista.reportarComedor(
+        this.vista.reporteComedor(
             this.modelo.restoEmpanadas(),
             this.modelo.restoPastelitos(),
             this.modelo.restosJugos(),

@@ -23,3 +23,17 @@ Quedan 8 pastelitos
 Quedan 8 jugos
  */
 
+import CL_mComedor from "./CL_mComedor.js";
+import CL_vComedor from "./CL_vComedor.js";
+import CL_controlador from "./CL_Controlador.js";
+
+export default class CL_Principal{
+    constructor(){
+        let modelo = new CL_mComedor();
+        let vista = new CL_vComedor();
+        let controlador = new CL_controlador(modelo, vista);
+        vista.controlador = controlador
+    }
+    
+
+}
