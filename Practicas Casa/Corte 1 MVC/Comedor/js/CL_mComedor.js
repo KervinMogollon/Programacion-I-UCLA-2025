@@ -1,8 +1,8 @@
 export default class CL_mComedor {
-    constructor({ iniEmpanadas, iniPastelistos, iniJugo }) {
-        this.acuEmpanadas = iniEmpanadas;
-        this.acuPastelitos = iniPastelistos;
-        this.acuJugos = iniJugo;
+    constructor() {
+        this.iniEmpanadas = 20;
+        this.iniPastelistos = 20;
+        this.iniJugo = 15;
     }
 
     set iniEmpanadas(iniEmpanadas) {
@@ -31,24 +31,24 @@ export default class CL_mComedor {
 
     procesarPedido(ped) {
         if (ped.orden === 1)
-            this.acuEmpanadas -= ped.cantOrden
+            this.iniEmpanadas -= ped.cantOrden
 
         if (ped.orden === 2)
-            this.acuPastelitos -= ped.cantOrden
+            this.iniPastelistos -= ped.cantOrden
 
-        if (ped.jugo === "si") 
-            this.acuJugos -= 1
+        if (ped.jugo === 1) 
+            this.iniJugo -= 1
     }
 
     restoEmpanadas() {
-        return this.acuEmpanadas
+        return this.iniEmpanadas
     }
 
     restoPastelitos() {
-        return this.acuPastelitos
+        return this.iniPastelistos
     }
 
     restosJugos() {
-        return this.acuJugos
+        return this.iniJugo
     }
 }

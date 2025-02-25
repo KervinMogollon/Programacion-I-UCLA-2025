@@ -1,13 +1,17 @@
 import CL_mPedido from "./CL_mPedido.js";
 import CL_vPedido from "./CL_vPedido.js";
+import CL_mComedor from "./CL_mComedor.js";
 
 export default class CL_vComedor {
     constructor() {
         this.inIniEmpanada = document.getElementById("comedorForm_inIniEmpanada");
         this.inIniPastelitos = document.getElementById("comedorForm_inIniPastelitos");
         this.inIniJugo = document.getElementById("comedorForm_inIniJugo");
+        this.btAceptar = document.getElementById("comedorForm_btAceptar")
 
         this.controlador = null;
+
+        this.mPedido = null;
 
         this.tabla = document.getElementById("comedorForm_tabla");
 
@@ -17,6 +21,9 @@ export default class CL_vComedor {
 
         this.vPedido.brProcesar.onclick = () =>
             this.controlador.procesarPedido();
+
+        this.btAceptar.onclick = () =>
+            this.AgregarInventario();
     }
 
     get iniEmpenada() {
@@ -41,18 +48,28 @@ export default class CL_vComedor {
         return this.mPedido;
     }
 
+    AgregarInventario() {
+        this.mComedor = new CL_mComedor({
+            iniEmpanadas: this.inIniEmpanada,
+            iniPastelistos: this.inIniPastelitos,
+            iniJugo: this.inIniJugo,
+        });
+        return this.mComedor;
+
+    }
+
     reporteComedor(restEmpa, restPast, restJug) {
+        this.salida.innerHTML = `
+        <br>Quedan ${restEmpa} empanadas
+        <br>Quedan ${restPast} pastelitos
+        <br>Quedan ${restJug} jugos
+`
+
         this.tabla.innerHTML += `
     <tr>
       <td>${this.mPedido.nombre}</td>
       <td>${this.mPedido.costoComida()}</td>
-    </tr>`;
-
-        this.salida.innerHTML += `
-            <br>Quedan ${restEmpa} empanadas
-            <br>Quedan ${restPast} pastelitos
-            <br>Quedan ${restJug} jugos
-    `
+    </tr>`
     }
 
 

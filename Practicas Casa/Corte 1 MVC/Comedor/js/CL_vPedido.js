@@ -1,10 +1,10 @@
 export default class CL_vPedido{
     constructor(){
-        this.inNomre = document.getElementById("pedidoFor_inNomre");
-        this.inOrden = document.getElementById("pedidoFor_inOrden");
-        this.inCantOrden = document.getElementById("pedidoFor_inCantOrden");
-        this.inJugo = document.getElementById("pedidoFor_inJugo");
-        this.brProcesar = document.getElementById("pedidoFor_brProcesar");
+        this.inNomre = document.getElementById("pedidoForm_inNomre");
+        this.inOrden = document.getElementById("pedidoForm_inOrden");
+        this.inCantOrden = document.getElementById("pedidoForm_inCantOrden");
+        this.inJugo = document.getElementById("pedidoForm_inJugo");
+        this.brProcesar = document.getElementById("pedidoForm_brProcesar");
     }
 
     get nombre(){
